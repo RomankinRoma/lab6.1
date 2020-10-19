@@ -1,4 +1,4 @@
-public class SlackNotifier implements  Notifier {
+public class SlackDecorator extends BaseDecorator {
     @Override
     public void send(String message) {
         System.out.println(message);
