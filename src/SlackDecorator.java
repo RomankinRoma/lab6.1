@@ -1,7 +1,7 @@
 public class SlackDecorator extends BaseDecorator {
     @Override
     public void send(String message) {
-        System.out.println(message);
+        super.send(message);
         sendSlack();
     }
 

@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        BaseDecorator decarator;
         int chose=-1;
         while (chose!=0){
             System.out.println("Send message");
@@ -17,7 +16,7 @@ public class Main {
                     System.out.println("Input message:");
                     String message=in.nextLine();
                     message=in.nextLine();
-                    decarator= new FacebookDecorator();
+                    BaseDecorator decarator=new FacebookDecorator();
                     decarator.send(message);
                     break;
                 case 2:

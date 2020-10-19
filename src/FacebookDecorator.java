@@ -2,7 +2,7 @@ public class FacebookDecorator extends BaseDecorator {
 
     @Override
     public void send(String message) {
-        System.out.println(message);
+     super.send(message);
         sendFacebook();
     }
 
