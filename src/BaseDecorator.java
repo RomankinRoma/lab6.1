@@ -1,4 +1,4 @@
 public interface BaseDecorator {
     public void BaseDecorator(Notifier notifier);
-    public void send();
+    public void send(String s);
 }

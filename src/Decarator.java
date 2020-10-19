@@ -7,7 +7,7 @@ public class Decarator implements BaseDecorator {
     }
 
     @Override
-    public void send() {
-        wrapper.send("Message sent");
+    public void send(String s) {
+        wrapper.send(s);
     }
 }

@@ -14,22 +14,25 @@ public class Main {
             chose= in.nextInt();
             switch (chose){
                 case 1:
-                    System.out.print("Input message:");
+                    System.out.println("Input message:");
                     String message=in.nextLine();
+                    message=in.nextLine();
                     decarator.BaseDecorator(new FacebookNotifier());
-                    decarator.send();
+                    decarator.send(message);
                     break;
                 case 2:
-                    System.out.print("Input message:");
+                    System.out.println("Input message:");
+                    message=in.nextLine();
                     message=in.nextLine();
                     decarator.BaseDecorator(new SMSNotifier());
-                    decarator.send();
+                    decarator.send(message);
                     break;
                 case 3:
-                    System.out.print("Input message:");
+                    System.out.println("Input message:");
+                    message=in.nextLine();
                     message=in.nextLine();
                     decarator.BaseDecorator(new SlackNotifier());
-                    decarator.send();
+                    decarator.send(message);
                     break;
                 case 0:
                     System.out.println("Good bye!");
